@@ -2,7 +2,7 @@ function detalle(){
     document.getElementById("root").innerHTML = "Detalle"
 }
 async function Detalle(pokemon){
-        const res = await fetch("https://pokeapi.co/api/v2/pokemon/" + pokemon);
+        const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
         const data = await res.json();
 
         console.log(data.forms[0].name);

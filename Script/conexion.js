@@ -2,7 +2,7 @@ async function conexionLista(filtrotipo) {
 
   
   if(filtrotipo == "All"){
-    const res = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${totalPokes}`);
+    const res = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=1024`);
     const data = await res.json();
     return data.results;
   }else{
@@ -23,7 +23,7 @@ async function General() {
   if (pokemones.length === 0) {
     pokemones = await conexionLista("All");
   }
-  Home();
+  home();
 }
 
 General()

@@ -1,6 +1,7 @@
 function buscadorfuncion(holy) {
     console.log(holy)
 }
+
 function buscadorfuncion(sza){
     if(sza.length >= 3){
         const filtrados = [];
@@ -29,13 +30,11 @@ function generarLista(arraypokemones) {
             <p>${arraypokemones[i].name}</p>
         </div>`;
     }
-
     return listaHTML;
 }
-function Home(filtro){
 
-    var root = document.getElementById("root");
-    root.innerHTML = ""
+function home() {
+    document.getElementById("root").innerHTML = "";
     //buscador
     const buscador = document.createElement("input");
     buscador.classList.add("c-buscador");
@@ -68,9 +67,9 @@ function Home(filtro){
         contenedorFiltro.appendChild(btn);
     }
 
- // Mostrar Lista de Pokemones
+    // Mostrar Lista de Pokemones
     const contenedorPokes = document.createElement("div");
-    contenedorPokes.id = "da-list";
+    contenedorPokes.id = "la-lista";
     
     contenedorPokes.innerHTML = generarLista(pokemones);
 
