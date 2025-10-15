@@ -1,29 +1,34 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apps</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <nav>
-        <button onclick="home()">Home</button>
-        <button onclick="informativa()">Informativa</button>
-        <button onclick="original()">Original</button>
-        <button onclick="favoritos()">Favoritos</button>
-        <button onclick="conexion()">Conexion</button>
-        <button onclick="detalle()">Detalle</button>
+        <button onclick="Home()">Home</button>
+        <button onclick="Informativa()">Informativa</button>
+        <button onclick="Capturados()">Capturados</button>
+        <button onclick="Favoritos()">Favoritos</button>
     </nav>
-    <div id="root">
-        <!-- aqui se agrega lo que hagamos en js -->
-    </div>
-    <script src="/Script/conexion.js"></script>
-    <script src="/Script/detalle.js"></script>
-    <script src="/Script/favoritos.js"></script>
-    <script src="/Script/Home.js"></script>
-    <script src="/Script/informativa.js"></script>
-    <script src="/Script/original.js"></script>
-</body>
 
+    <div id="root">
+        
+    </div>
+    <script src="paginas/conexion.js"></script>
+    <script src="paginas/home.js"></script>
+    <script src="paginas/detalle.js"></script>
+    <script src="paginas/favoritos.js"></script>
+    <script src="paginas/informativa.js"></script>
+    <script src="paginas/capturados.js"></script>
+
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded",General)
+
+    </script>
+    
+</body>
 </html>
