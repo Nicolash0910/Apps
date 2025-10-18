@@ -1,0 +1,15 @@
+body {
+  background-color: #e9d5ff; 
+  color: #2e1065;            
+  font-family: sans-serif;
+  margin: 0;
+  padding: 10px;
+}
+
+.c-buscador {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #c4b5fd;
+  border-radius: 4px;
+}
